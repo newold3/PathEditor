@@ -8,7 +8,7 @@ A simple demonstration video: https://youtu.be/rIYYSKdQGUY
 
 ## Compatibility
 
-This is the Godot v3.x version of the plugin; for Godot v2.x compatibility, check the `Godot_v2.x` branch. 
+Plugin version: Godot v3.x 
 
 ## Features:
 
