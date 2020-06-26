@@ -1,0 +1,2120 @@
+[gd_scene load_steps=84 format=2]
+
+[ext_resource path="res://Addons/PathEdit/PathEdit.gd" type="Script" id=1]
+[ext_resource path="res://Addons/PathEdit/Graphics/background1.png" type="Texture" id=2]
+[ext_resource path="res://Addons/PathEdit/Graphics/plus_button_normal.png" type="Texture" id=3]
+[ext_resource path="res://Addons/PathEdit/Graphics/plus_button_over.png" type="Texture" id=4]
+[ext_resource path="res://Addons/PathEdit/Graphics/ok_button_normal.png" type="Texture" id=5]
+[ext_resource path="res://Addons/PathEdit/Graphics/ok_button_over.png" type="Texture" id=6]
+[ext_resource path="res://Addons/PathEdit/Graphics/cancel_button_normal.png" type="Texture" id=7]
+[ext_resource path="res://Addons/PathEdit/Graphics/cancel_button_over.png" type="Texture" id=8]
+[ext_resource path="res://Addons/PathEdit/Graphics/play_backward_button_over.png" type="Texture" id=9]
+[ext_resource path="res://Addons/PathEdit/Graphics/play_forward_button_normal.png" type="Texture" id=10]
+[ext_resource path="res://Addons/PathEdit/Graphics/play_forward_button_over.png" type="Texture" id=11]
+[ext_resource path="res://Addons/PathEdit/Graphics/play_backward_button_normal.png" type="Texture" id=12]
+[ext_resource path="res://Addons/PathEdit/Graphics/asteroid.png" type="Texture" id=13]
+[ext_resource path="res://Addons/PathEdit/Graphics/enlarge_button_normal.png" type="Texture" id=14]
+[ext_resource path="res://Addons/PathEdit/Graphics/enlarge_button_over.png" type="Texture" id=15]
+[ext_resource path="res://Addons/PathEdit/Graphics/enlarge_button_disabled.png" type="Texture" id=16]
+[ext_resource path="res://Addons/PathEdit/Graphics/corners.png" type="Texture" id=17]
+[ext_resource path="res://Addons/PathEdit/Graphics/move_vertical_button_disabled.png" type="Texture" id=18]
+[ext_resource path="res://Addons/PathEdit/Graphics/move_vertical_button_over.png" type="Texture" id=19]
+[ext_resource path="res://Addons/PathEdit/Graphics/move_vertical_button_normal.png" type="Texture" id=20]
+[ext_resource path="res://Addons/PathEdit/Graphics/minus_button_over.png" type="Texture" id=21]
+[ext_resource path="res://Addons/PathEdit/Graphics/minus_button_normal.png" type="Texture" id=22]
+[ext_resource path="res://Addons/PathEdit/Graphics/center_button_normal.png" type="Texture" id=23]
+[ext_resource path="res://Addons/PathEdit/Graphics/center_button_over.png" type="Texture" id=24]
+[ext_resource path="res://Addons/PathEdit/Fonts/KOMIKAX_.ttf" type="DynamicFontData" id=25]
+[ext_resource path="res://Addons/PathEdit/Graphics/stop_button_over.png" type="Texture" id=26]
+[ext_resource path="res://Addons/PathEdit/Graphics/stop_button_disable.png" type="Texture" id=27]
+[ext_resource path="res://Addons/PathEdit/Graphics/stop_button_normal.png" type="Texture" id=28]
+[ext_resource path="res://Addons/PathEdit/Graphics/folder_button_normal.png" type="Texture" id=29]
+[ext_resource path="res://Addons/PathEdit/Graphics/folder_button_over.png" type="Texture" id=30]
+[ext_resource path="res://Addons/PathEdit/Graphics/rotate_points_button_disabled.png" type="Texture" id=31]
+[ext_resource path="res://Addons/PathEdit/Graphics/rotate_points_button_normal.png" type="Texture" id=32]
+[ext_resource path="res://Addons/PathEdit/Graphics/rotate_points_button_over.png" type="Texture" id=33]
+[ext_resource path="res://Addons/PathEdit/CustomSlider.tscn" type="PackedScene" id=34]
+[ext_resource path="res://Addons/PathEdit/Graphics/move_horizontal_button_normal.png" type="Texture" id=35]
+[ext_resource path="res://Addons/PathEdit/Graphics/move_horizontal_button_over.png" type="Texture" id=36]
+[ext_resource path="res://Addons/PathEdit/Graphics/move_horizontal_button_disabled.png" type="Texture" id=37]
+[ext_resource path="res://Addons/PathEdit/Graphics/canvas_back.png" type="Texture" id=38]
+[ext_resource path="res://Addons/PathEdit/Graphics/mirror_right_button_over.png" type="Texture" id=39]
+[ext_resource path="res://Addons/PathEdit/CustomFileDialog.tscn" type="PackedScene" id=40]
+[ext_resource path="res://Addons/PathEdit/Graphics/mirror_right_button_normal.png" type="Texture" id=41]
+[ext_resource path="res://Addons/PathEdit/Graphics/paste_button_over.png" type="Texture" id=42]
+[ext_resource path="res://Addons/PathEdit/Graphics/mirror_up_button_normal.png" type="Texture" id=43]
+[ext_resource path="res://Addons/PathEdit/Graphics/mirror_up_button_over.png" type="Texture" id=44]
+[ext_resource path="res://Addons/PathEdit/Graphics/copy_button_over.png" type="Texture" id=45]
+[ext_resource path="res://Addons/PathEdit/Graphics/paste_button_disabled.png" type="Texture" id=46]
+[ext_resource path="res://Addons/PathEdit/Graphics/paste_button_normal.png" type="Texture" id=47]
+[ext_resource path="res://Addons/PathEdit/UndoRedo.tscn" type="PackedScene" id=48]
+[ext_resource path="res://Addons/PathEdit/Graphics/copy_button_disabled.png" type="Texture" id=49]
+[ext_resource path="res://Addons/PathEdit/Graphics/copy_button_normal.png" type="Texture" id=50]
+[ext_resource path="res://Addons/PathEdit/Graphics/help_button_normal.png" type="Texture" id=51]
+[ext_resource path="res://Addons/PathEdit/Graphics/help_button_over.png" type="Texture" id=52]
+[ext_resource path="res://Addons/PathEdit/Fonts/Drummon.ttf" type="DynamicFontData" id=53]
+[ext_resource path="res://Addons/PathEdit/Graphics/canvas_clip_contents_true.png" type="Texture" id=54]
+[ext_resource path="res://Addons/PathEdit/Graphics/canvas_clip_contents_false.png" type="Texture" id=55]
+[ext_resource path="res://Addons/PathEdit/Graphics/canvas_clip_contents_back_button_over.png" type="Texture" id=56]
+[ext_resource path="res://Addons/PathEdit/Graphics/canvas_clip_contents_back_button_normal.png" type="Texture" id=57]
+[ext_resource path="res://Addons/PathEdit/Graphics/dialog_selector.png" type="Texture" id=58]
+[ext_resource path="res://Addons/PathEdit/Graphics/shadow_for_dialogs.png" type="Texture" id=59]
+[ext_resource path="res://Addons/PathEdit/Graphics/button_clone_normal.png" type="Texture" id=60]
+[ext_resource path="res://Addons/PathEdit/Graphics/button_clone_disabled.png" type="Texture" id=61]
+[ext_resource path="res://Addons/PathEdit/Graphics/button_clone_over.png" type="Texture" id=62]
+[ext_resource path="res://Addons/PathEdit/Graphics/minus_button_disabled.png" type="Texture" id=63]
+
+[sub_resource type="DynamicFont" id=1]
+outline_size = 3
+outline_color = Color( 0, 0, 0, 1 )
+use_filter = true
+extra_spacing_space = 2
+font_data = ExtResource( 25 )
+
+[sub_resource type="Theme" id=2]
+default_font = SubResource( 1 )
+Label/colors/font_color = Color( 1, 1, 1, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = null
+Label/styles/normal = null
+
+[sub_resource type="StyleBoxFlat" id=3]
+bg_color = Color( 1, 1, 1, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="DynamicFont" id=4]
+size = 40
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_top = -20
+extra_spacing_char = 5
+font_data = ExtResource( 25 )
+
+[sub_resource type="StyleBoxFlat" id=5]
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.027451, 0, 0, 1 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 0, 0, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 40, 0, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 80, 0, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 120, 0, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 160, 0, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 0, 40, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 40, 40, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 80, 40, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 120, 40, 40, 40 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 13 )
+region = Rect2( 160, 40, 40, 40 )
+
+[sub_resource type="SpriteFrames" id=16]
+animations = [ {
+"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="StyleBoxFlat" id=17]
+bg_color = Color( 0.227451, 0.219608, 0.25098, 1 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 6
+corner_radius_top_right = 6
+corner_radius_bottom_right = 6
+corner_radius_bottom_left = 6
+
+[sub_resource type="StyleBoxFlat" id=18]
+bg_color = Color( 0.72549, 0.8, 0.819608, 1 )
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color( 0, 0, 0, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="StyleBoxFlat" id=19]
+bg_color = Color( 0.756863, 0.752941, 0.752941, 1 )
+border_width_left = 6
+border_width_top = 6
+border_width_right = 6
+border_width_bottom = 6
+border_color = Color( 0.0509804, 0.0156863, 0.470588, 1 )
+corner_radius_top_left = 12
+corner_radius_top_right = 12
+corner_radius_bottom_right = 12
+corner_radius_bottom_left = 12
+
+[sub_resource type="DynamicFont" id=20]
+size = 26
+outline_size = 2
+outline_color = Color( 0, 0, 0, 1 )
+extra_spacing_char = 5
+font_data = ExtResource( 53 )
+
+[node name="PathEdit" type="CanvasLayer"]
+layer = 128
+
+[node name="Controls" type="Control" parent="."]
+anchor_right = 2.066
+anchor_bottom = 1.0
+margin_right = -34.24
+rect_pivot_offset = Vector2( 661, 480 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = SubResource( 2 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background1" type="ColorRect" parent="Controls"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.788235, 0.788235, 0.788235, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="background2" type="TextureRect" parent="Controls"]
+modulate = Color( 1, 1, 1, 0.596078 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Paths" type="Panel" parent="Controls"]
+margin_left = 4.0
+margin_top = 24.0
+margin_right = 420.0
+margin_bottom = 392.0
+rect_clip_content = true
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Controls/Paths"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 6.0
+margin_right = -6.0
+margin_bottom = -6.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="Controls/Paths"]
+modulate = Color( 1, 1, 1, 0.741176 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 6.0
+margin_right = -6.0
+margin_bottom = -6.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_list_label" type="Label" parent="Controls/Paths"]
+margin_left = 24.0
+margin_top = 16.0
+margin_right = 293.0
+margin_bottom = 63.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "PATH LIST:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_list" type="ItemList" parent="Controls/Paths"]
+margin_left = 21.0
+margin_top = 64.0
+margin_right = 374.0
+margin_bottom = 341.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/guide_color = Color( 0.403922, 0.403922, 0.403922, 0.54902 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="add_new_path_button" type="TextureButton" parent="Controls/Paths"]
+margin_left = 376.0
+margin_top = 72.0
+margin_right = 408.0
+margin_bottom = 104.0
+hint_tooltip = "Create a new path"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 3 )
+texture_hover = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="delete_selected_path_button" type="TextureButton" parent="Controls/Paths"]
+margin_left = 376.0
+margin_top = 113.0
+margin_right = 408.0
+margin_bottom = 145.0
+hint_tooltip = "Delete the path selected from the disk (Supr)"
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_hover = ExtResource( 21 )
+texture_disabled = ExtResource( 63 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="duplicate_path_button" type="TextureButton" parent="Controls/Paths"]
+margin_left = 376.0
+margin_top = 155.0
+margin_right = 408.0
+margin_bottom = 187.0
+hint_tooltip = "Duplicate current path (CTRL + D)"
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 60 )
+texture_hover = ExtResource( 62 )
+texture_disabled = ExtResource( 61 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="copy_path_button" type="TextureButton" parent="Controls/Paths"]
+margin_left = 380.0
+margin_top = 238.0
+margin_right = 404.0
+margin_bottom = 265.0
+hint_tooltip = "Copy current path (CTRL + C)"
+mouse_default_cursor_shape = 2
+disabled = true
+shortcut_in_tooltip = false
+texture_normal = ExtResource( 50 )
+texture_hover = ExtResource( 45 )
+texture_disabled = ExtResource( 49 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="paste_path_button" type="TextureButton" parent="Controls/Paths"]
+margin_left = 383.0
+margin_top = 274.0
+margin_right = 404.0
+margin_bottom = 301.0
+hint_tooltip = "Paste the path copied to the clipboard  (CTRL + V)"
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 47 )
+texture_hover = ExtResource( 42 )
+texture_disabled = ExtResource( 46 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="select_path_button" type="TextureButton" parent="Controls/Paths"]
+margin_left = 380.0
+margin_top = 312.0
+margin_right = 407.0
+margin_bottom = 335.0
+hint_tooltip = "Load Resource Curve2D from your computer"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 29 )
+texture_hover = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Points" type="Panel" parent="Controls"]
+margin_left = 4.0
+margin_top = 396.0
+margin_right = 420.0
+margin_bottom = 860.0
+rect_clip_content = true
+custom_styles/panel = SubResource( 3 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Controls/Points"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 6.0
+margin_right = -6.0
+margin_bottom = -6.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="Controls/Points"]
+modulate = Color( 1, 1, 1, 0.741176 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 6.0
+margin_top = 6.0
+margin_right = -6.0
+margin_bottom = -6.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="points_list_label" type="Label" parent="Controls/Points"]
+margin_left = 24.0
+margin_top = 12.0
+margin_right = 435.0
+margin_bottom = 59.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "POINTS IN PATH:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point_list" type="ItemList" parent="Controls/Points"]
+margin_left = 20.0
+margin_top = 60.0
+margin_right = 373.0
+margin_bottom = 337.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+custom_colors/guide_color = Color( 0.403922, 0.403922, 0.403922, 0.54902 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="delete_point_button" type="TextureButton" parent="Controls/Points"]
+margin_left = 376.0
+margin_top = 68.0
+margin_right = 408.0
+margin_bottom = 100.0
+hint_tooltip = "Delete the point selected (Supr)"
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 22 )
+texture_hover = ExtResource( 21 )
+texture_disabled = ExtResource( 63 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="copy_point_button" type="TextureButton" parent="Controls/Points"]
+margin_left = 380.0
+margin_top = 269.0
+margin_right = 404.0
+margin_bottom = 296.0
+hint_tooltip = "Copy the point selected  (CTRL + C)"
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 50 )
+texture_hover = ExtResource( 45 )
+texture_disabled = ExtResource( 49 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="paste_point_button" type="TextureButton" parent="Controls/Points"]
+margin_left = 383.0
+margin_top = 309.0
+margin_right = 404.0
+margin_bottom = 336.0
+hint_tooltip = "Paste the point copied to the clipboard  (CTRL + V)"
+mouse_default_cursor_shape = 2
+disabled = true
+texture_normal = ExtResource( 47 )
+texture_hover = ExtResource( 42 )
+texture_disabled = ExtResource( 46 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="point_selected_label" type="Label" parent="Controls/Points"]
+margin_left = 24.0
+margin_top = 348.0
+margin_right = 446.0
+margin_bottom = 399.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "POINT SELECTED:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="x_label" type="Label" parent="Controls/Points"]
+margin_left = 20.0
+margin_top = 404.0
+margin_right = 68.0
+margin_bottom = 451.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "X:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="x_SpinBox" type="SpinBox" parent="Controls/Points"]
+margin_left = 68.0
+margin_top = 406.0
+margin_right = 190.0
+margin_bottom = 444.0
+hint_tooltip = "X value for the point selected"
+min_value = -9999.0
+max_value = 9999.0
+editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="y_label" type="Label" parent="Controls/Points"]
+margin_left = 212.0
+margin_top = 404.0
+margin_right = 258.0
+margin_bottom = 451.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "Y:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="y_SpinBox" type="SpinBox" parent="Controls/Points"]
+margin_left = 260.0
+margin_top = 406.0
+margin_right = 382.0
+margin_bottom = 444.0
+hint_tooltip = "Y value for the point selected"
+min_value = -9999.0
+max_value = 9999.0
+editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="baked_points_label" type="Label" parent="Controls"]
+margin_left = 483.0
+margin_top = 40.0
+margin_right = 881.0
+margin_bottom = 107.0
+rect_scale = Vector2( 0.4, 0.5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "Bake interval:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="backed_SpinBox" type="SpinBox" parent="Controls"]
+margin_left = 651.0
+margin_top = 35.0
+margin_right = 773.0
+margin_bottom = 73.0
+hint_tooltip = "The distance in pixels between two adjacent
+cached points. Changing it forces the cache to be
+recomputed the next time the get_baked_points() or
+get_baked_length() function is called. The smaller
+the distance, the more points in the cache and the
+more memory it will consume, so use with care.
+"
+min_value = 0.01
+max_value = 512.0
+step = 0.01
+value = 5.0
+editable = false
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play_animation_label" type="Label" parent="Controls"]
+margin_left = 460.0
+margin_top = 792.0
+margin_right = 893.0
+margin_bottom = 840.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "Play animation:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play_animation_time_label" type="Label" parent="Controls"]
+margin_left = 948.0
+margin_top = 792.0
+margin_right = 1212.0
+margin_bottom = 840.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "Duration:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation_time_SpinBox" type="SpinBox" parent="Controls"]
+margin_left = 1168.0
+margin_top = 792.0
+margin_right = 1290.0
+margin_bottom = 830.0
+hint_tooltip = "Duration for animation (in seconds)"
+min_value = 0.1
+max_value = 9999.0
+step = 0.1
+value = 10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play_forward_button" type="TextureButton" parent="Controls"]
+margin_left = 816.0
+margin_top = 800.0
+margin_right = 848.0
+margin_bottom = 832.0
+hint_tooltip = "Play animation normal"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+enabled_focus_mode = 0
+texture_normal = ExtResource( 10 )
+texture_hover = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="play_backward_button" type="TextureButton" parent="Controls"]
+margin_left = 856.0
+margin_top = 800.0
+margin_right = 888.0
+margin_bottom = 832.0
+hint_tooltip = "Play animation reverse"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+enabled_focus_mode = 0
+texture_normal = ExtResource( 12 )
+texture_hover = ExtResource( 9 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="stop_animation_button" type="TextureButton" parent="Controls"]
+margin_left = 900.0
+margin_top = 800.0
+margin_right = 932.0
+margin_bottom = 832.0
+hint_tooltip = "Play animation reverse"
+focus_mode = 0
+mouse_default_cursor_shape = 2
+disabled = true
+enabled_focus_mode = 0
+texture_normal = ExtResource( 28 )
+texture_hover = ExtResource( 26 )
+texture_disabled = ExtResource( 27 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": "Stop animation"
+}
+
+[node name="path_color_label" type="Label" parent="Controls"]
+margin_left = 970.0
+margin_top = 45.0
+margin_right = 1415.0
+margin_bottom = 92.0
+rect_scale = Vector2( 0.4, 0.5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "Path line Color:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="path_color_container" type="Panel" parent="Controls"]
+margin_left = 1151.0
+margin_top = 42.0
+margin_right = 1191.0
+margin_bottom = 71.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="path_color" type="ColorRect" parent="Controls/path_color_container"]
+margin_left = 2.0
+margin_top = 2.0
+margin_right = 38.0
+margin_bottom = 27.0
+mouse_default_cursor_shape = 2
+color = Color( 1, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="canvas_clip_contents_button" type="TextureButton" parent="Controls"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1206.0
+margin_top = 34.0
+margin_right = -78.0
+margin_bottom = -882.0
+hint_tooltip = "Enables or disables the canvas to draw outside itself"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 57 )
+texture_hover = ExtResource( 56 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="canvas_clip_contents_CheckBox" type="CheckBox" parent="Controls/canvas_clip_contents_button"]
+margin_left = -3.0
+margin_top = -7.0
+margin_right = 24.0
+margin_bottom = 29.0
+rect_scale = Vector2( 1.63, 1.6 )
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+custom_icons/checked = ExtResource( 55 )
+custom_icons/unchecked = ExtResource( 54 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClosePath_button" type="Button" parent="Controls"]
+margin_left = 479.0
+margin_top = 101.0
+margin_right = 711.0
+margin_bottom = 157.0
+hint_tooltip = "Close or open the current path.
+When the path is closed, the first point sets
+the position of the last point to its self position"
+mouse_default_cursor_shape = 2
+clip_text = true
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false,
+"_editor_description_": "Close or open the current curve"
+}
+
+[node name="label" type="Label" parent="Controls/ClosePath_button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 76.0
+margin_bottom = 8.0
+rect_scale = Vector2( 0.752, 0.876 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.827451, 0.854902, 0.87451, 1 )
+text = "Close Path"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="MirrorPointsButtonsContainer" type="Container" parent="Controls"]
+margin_left = 959.0
+margin_top = 82.0
+margin_right = 1254.0
+margin_bottom = 160.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="amchor_mode_label" type="Label" parent="Controls/MirrorPointsButtonsContainer"]
+margin_left = 11.0
+margin_top = 13.0
+margin_right = 396.0
+margin_bottom = 60.0
+rect_scale = Vector2( 0.38, 0.5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "Mirror Points"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="anchor_mode_options" type="OptionButton" parent="Controls/MirrorPointsButtonsContainer"]
+margin_left = 8.0
+margin_top = 40.0
+margin_right = 290.0
+margin_bottom = 74.0
+hint_tooltip = "when create mirror points,
+they will be anchored
+with these presets"
+mouse_default_cursor_shape = 2
+text = "Last point to Last Point"
+items = [ "First point to First Point", null, false, 0, null, "First point to End Point", null, false, 1, null, "Mid point to mid point", null, false, 2, null, "Last point to First Point", null, false, 3, null, "Last point to Last Point", null, false, 5, null ]
+selected = 4
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mirror_points_to_right" type="TextureButton" parent="Controls/MirrorPointsButtonsContainer"]
+anchor_left = 0.0847458
+anchor_right = 0.0847458
+margin_left = 200.0
+margin_top = 8.0
+margin_right = 229.0
+margin_bottom = 32.0
+hint_tooltip = "Duplicate current path in horizontal"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 41 )
+texture_hover = ExtResource( 39 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="mirror_points_to_up" type="TextureButton" parent="Controls/MirrorPointsButtonsContainer"]
+anchor_left = 0.0847458
+anchor_right = 0.0847458
+margin_left = 235.0
+margin_top = 5.0
+margin_right = 264.0
+margin_bottom = 34.0
+hint_tooltip = "Duplicate current path in vertical"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 43 )
+texture_hover = ExtResource( 44 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="load_background_button" type="Button" parent="Controls"]
+margin_left = 968.0
+margin_top = 872.0
+margin_right = 1283.0
+margin_bottom = 944.0
+hint_tooltip = "load background into canvas"
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/load_background_button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 117.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.729, 0.686 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.827451, 0.854902, 0.87451, 1 )
+text = "Load
+Background"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save_paths_label" type="Label" parent="Controls"]
+margin_left = 18.0
+margin_top = 878.0
+margin_right = 405.0
+margin_bottom = 925.0
+rect_scale = Vector2( 0.7, 0.5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.0862745, 0.564706, 0.901961, 1 )
+text = "Save Paths in:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save_paths_LineEdit" type="LineEdit" parent="Controls"]
+margin_left = 12.0
+margin_top = 906.0
+margin_right = 553.0
+margin_bottom = 944.0
+hint_tooltip = "Select Folder to save the paths"
+mouse_default_cursor_shape = 2
+text = "res://Objects/Paths/"
+editable = false
+caret_blink = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="select_paths_dialog_button" type="TextureButton" parent="Controls"]
+margin_left = 566.0
+margin_top = 914.0
+margin_right = 593.0
+margin_bottom = 937.0
+hint_tooltip = "Select Folder to save the paths"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 29 )
+texture_hover = ExtResource( 30 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="save_paths_button" type="Button" parent="Controls"]
+margin_left = 632.0
+margin_top = 872.0
+margin_right = 952.0
+margin_bottom = 944.0
+hint_tooltip = "Save all paths in disk"
+mouse_default_cursor_shape = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/save_paths_button"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 137.0
+margin_bottom = 42.0
+rect_scale = Vector2( 0.729, 0.686 )
+mouse_default_cursor_shape = 2
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.827451, 0.854902, 0.87451, 1 )
+text = "Save all paths"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="created_by_label" type="Label" parent="Controls"]
+self_modulate = Color( 1, 1, 1, 0.4 )
+margin_left = 752.0
+margin_top = 9.0
+margin_right = 2003.0
+margin_bottom = 56.0
+rect_scale = Vector2( 0.4, 0.4 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.709804, 0.709804, 0.709804, 0.345098 )
+text = "Created by newold - Version 1.0 - 24-06-2020"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Canvas" type="Panel" parent="Controls"]
+margin_left = 497.0
+margin_top = 186.0
+margin_right = 1231.0
+margin_bottom = 734.0
+rect_clip_content = true
+mouse_filter = 1
+custom_styles/panel = SubResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background_back" type="TextureRect" parent="Controls/Canvas"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = -2.0
+margin_bottom = -2.0
+rect_pivot_offset = Vector2( 416, 356 )
+texture = ExtResource( 38 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Background" type="TextureRect" parent="Controls/Canvas"]
+self_modulate = Color( 1, 1, 1, 0.454902 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 2.0
+margin_top = 2.0
+margin_right = -2.0
+margin_bottom = -2.0
+rect_pivot_offset = Vector2( 416, 356 )
+expand = true
+stretch_mode = 6
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Layer0" type="Control" parent="Controls/Canvas"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Layer1" type="Control" parent="Controls/Canvas"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Layer2" type="Control" parent="Controls/Canvas"]
+margin_right = 40.0
+margin_bottom = 40.0
+mouse_filter = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="animation_total_points_label" type="Label" parent="Controls"]
+self_modulate = Color( 1, 1, 1, 0.4 )
+margin_left = 504.0
+margin_top = 688.0
+margin_right = 1938.0
+margin_bottom = 755.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.709804, 0.709804, 0.709804, 0.345098 )
+align = 2
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="scale_points_label" type="Label" parent="Controls"]
+self_modulate = Color( 1, 1, 1, 0.4 )
+margin_left = 503.0
+margin_top = 194.0
+margin_right = 1059.0
+margin_bottom = 261.0
+rect_scale = Vector2( 0.5, 0.5 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 0.709804, 0.709804, 0.709804, 0.345098 )
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="corner_upper_left" type="Sprite" parent="Controls"]
+position = Vector2( 476, 172 )
+texture = ExtResource( 17 )
+hframes = 3
+
+[node name="corner_upper_right" type="Sprite" parent="Controls"]
+position = Vector2( 1253, 172 )
+texture = ExtResource( 17 )
+hframes = 3
+frame = 1
+
+[node name="corner_bottom_left" type="Sprite" parent="Controls"]
+position = Vector2( 477, 754 )
+scale = Vector2( 1, 1.22222 )
+texture = ExtResource( 17 )
+hframes = 3
+frame = 2
+
+[node name="rotate_points_Slider" parent="Controls" instance=ExtResource( 34 )]
+margin_left = 477.0
+margin_top = 163.0
+margin_right = 1251.0
+margin_bottom = 173.0
+hint_tooltip = "Rotate all points clockwise or counter clockwise (in degrees)
+(Use Slider to rotate or Double click
+to specify rotation manually)"
+texture_when_mouse_is_out = ExtResource( 32 )
+texture_when_mouse_is_in = ExtResource( 33 )
+texture_when_is_disabled = ExtResource( 31 )
+min_value = -0.1
+max_value = 0.1
+style = 0
+
+[node name="scale_points_Slider" parent="Controls" instance=ExtResource( 34 )]
+margin_left = 467.0
+margin_top = 174.0
+margin_right = 477.0
+margin_bottom = 748.0
+hint_tooltip = "Scale all position of the points
+(Use Slider to scale or Double click
+to specify scale manually)"
+texture_when_mouse_is_out = ExtResource( 14 )
+texture_when_mouse_is_in = ExtResource( 15 )
+texture_when_is_disabled = ExtResource( 16 )
+min_value = 0.2
+max_value = 5.0
+warp_scroll = false
+
+[node name="move_horizontal_Slider" parent="Controls" instance=ExtResource( 34 )]
+margin_left = 477.0
+margin_top = 753.0
+margin_right = 1235.0
+margin_bottom = 763.0
+hint_tooltip = "Move all points left or right
+(Use Slider to move or Double click
+to specify movement manually)"
+texture_when_mouse_is_out = ExtResource( 35 )
+texture_when_mouse_is_in = ExtResource( 36 )
+texture_when_is_disabled = ExtResource( 37 )
+min_value = -100.0
+max_value = 100.0
+style = 0
+
+[node name="move_vertical_Slider" parent="Controls" instance=ExtResource( 34 )]
+margin_left = 1251.0
+margin_top = 174.0
+margin_right = 1261.0
+margin_bottom = 736.0
+hint_tooltip = "Move all points up or down
+(Use Slider to move or Double click
+to specify movement manually)"
+texture_when_mouse_is_out = ExtResource( 20 )
+texture_when_mouse_is_in = ExtResource( 19 )
+texture_when_is_disabled = ExtResource( 18 )
+min_value = -50.0
+max_value = 50.0
+
+[node name="center_points_option_button" type="OptionButton" parent="Controls"]
+self_modulate = Color( 1, 1, 1, 0 )
+margin_left = 1240.0
+margin_top = 741.0
+margin_right = 1273.0
+margin_bottom = 775.0
+hint_tooltip = "flip the curve horizontally / vertically
+or anchor curve points to (0, 0) or center of canvas"
+mouse_default_cursor_shape = 2
+text = "Do nothing"
+clip_text = true
+items = [ "Do nothing", null, false, 1, null, "Anchor Points to Center of the canvas", null, false, 0, null, "Anchor Points to (0, 0)", null, false, 2, null, "Flip Points in Horizontal", null, false, 3, null, "Flip Points in Vertical", null, false, 4, null, "Flip Points in Horizontal and Vertical", null, false, 5, null ]
+selected = 0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="center_points_button" type="TextureButton" parent="Controls"]
+margin_left = 1240.0
+margin_top = 741.0
+margin_right = 1272.0
+margin_bottom = 773.0
+mouse_filter = 2
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 23 )
+texture_hover = ExtResource( 24 )
+texture_focused = ExtResource( 23 )
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="PointsContainer" type="Control" parent="Controls"]
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Controls"]
+visible = false
+position = Vector2( -10, -10 )
+scale = Vector2( 0.7, 0.7 )
+frames = SubResource( 16 )
+frame = 3
+playing = true
+
+[node name="hide_behind_controls" type="Control" parent="Controls"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Controls/hide_behind_controls"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0, 0, 0, 0.752941 )
+
+[node name="ColorPicker" type="Panel" parent="Controls"]
+visible = false
+margin_left = 809.0
+margin_top = 55.0
+margin_right = 1193.0
+margin_bottom = 607.0
+custom_styles/panel = SubResource( 17 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="color" type="ColorPicker" parent="Controls/ColorPicker"]
+margin_left = 4.0
+margin_top = 4.0
+margin_right = 4.0
+margin_bottom = 4.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="replace_file_path_dialog" type="Panel" parent="Controls"]
+visible = false
+margin_left = 585.0
+margin_top = 664.0
+margin_right = 1198.0
+margin_bottom = 870.0
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/replace_file_path_dialog"]
+margin_left = 20.0
+margin_top = 14.0
+margin_right = 840.0
+margin_bottom = 111.0
+rect_scale = Vector2( 0.413451, 0.566457 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "The destination folder contains files with the
+same name as the following paths:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label2" type="Label" parent="Controls/replace_file_path_dialog"]
+margin_left = 482.0
+margin_top = 85.0
+margin_right = 764.0
+margin_bottom = 232.0
+rect_scale = Vector2( 0.407038, 0.478568 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Overwrite
+Selected
+Paths"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ok_button" type="TextureButton" parent="Controls/replace_file_path_dialog"]
+margin_left = 502.0
+margin_top = 159.0
+margin_right = 534.0
+margin_bottom = 191.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel_button" type="TextureButton" parent="Controls/replace_file_path_dialog"]
+margin_left = 542.0
+margin_top = 159.0
+margin_right = 574.0
+margin_bottom = 191.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="info_button" type="TextureButton" parent="Controls/replace_file_path_dialog"]
+margin_left = 441.0
+margin_top = 40.0
+margin_right = 468.0
+margin_bottom = 67.0
+hint_tooltip = "hold shift and press left Click
+to select multiple paths"
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 51 )
+texture_hover = ExtResource( 52 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialog_selector" type="Sprite" parent="Controls/replace_file_path_dialog"]
+position = Vector2( 84, 212 )
+scale = Vector2( 1, -1 )
+texture = ExtResource( 58 )
+
+[node name="shadow_for_dialogs" type="Sprite" parent="Controls/replace_file_path_dialog"]
+show_behind_parent = true
+position = Vector2( 246, 87 )
+scale = Vector2( 2.575, 1.1 )
+texture = ExtResource( 59 )
+
+[node name="ItemList" type="ItemList" parent="Controls/replace_file_path_dialog"]
+margin_left = 18.0
+margin_top = 73.0
+margin_right = 468.0
+margin_bottom = 190.0
+select_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="delete_path_dialog" type="Panel" parent="Controls"]
+visible = false
+margin_left = 376.0
+margin_top = 195.0
+margin_right = 800.0
+margin_bottom = 315.0
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/delete_path_dialog"]
+margin_left = 20.0
+margin_top = 14.0
+margin_right = 840.0
+margin_bottom = 111.0
+rect_scale = Vector2( 0.459142, 0.96494 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Do you really want to delete
+the selected path?"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ok_button" type="TextureButton" parent="Controls/delete_path_dialog"]
+margin_left = 336.0
+margin_top = 70.0
+margin_right = 368.0
+margin_bottom = 102.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel_button" type="TextureButton" parent="Controls/delete_path_dialog"]
+margin_left = 376.0
+margin_top = 70.0
+margin_right = 408.0
+margin_bottom = 102.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialog_selector" type="Sprite" parent="Controls/delete_path_dialog"]
+position = Vector2( 29, -8 )
+texture = ExtResource( 58 )
+
+[node name="shadow_for_dialogs" type="Sprite" parent="Controls/delete_path_dialog"]
+show_behind_parent = true
+position = Vector2( 246, 87 )
+scale = Vector2( 2.575, 1.1 )
+texture = ExtResource( 59 )
+
+[node name="create_path_panel" type="Panel" parent="Controls"]
+visible = false
+margin_left = 375.0
+margin_top = 154.0
+margin_right = 799.0
+margin_bottom = 274.0
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/create_path_panel"]
+margin_left = 20.0
+margin_top = 2.0
+margin_right = 408.0
+margin_bottom = 69.0
+rect_scale = Vector2( 0.805, 1 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Path Name:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="Controls/create_path_panel"]
+margin_left = 16.0
+margin_top = 68.0
+margin_right = 327.0
+margin_bottom = 92.0
+caret_blink = true
+
+[node name="ok_button" type="TextureButton" parent="Controls/create_path_panel"]
+margin_left = 336.0
+margin_top = 70.0
+margin_right = 368.0
+margin_bottom = 102.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel_button" type="TextureButton" parent="Controls/create_path_panel"]
+margin_left = 376.0
+margin_top = 70.0
+margin_right = 408.0
+margin_bottom = 102.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialog_selector" type="Sprite" parent="Controls/create_path_panel"]
+position = Vector2( 27, -9 )
+texture = ExtResource( 58 )
+
+[node name="shadow_for_dialogs" type="Sprite" parent="Controls/create_path_panel"]
+show_behind_parent = true
+position = Vector2( 247.5, 96.5 )
+scale = Vector2( 2.405, 0.953333 )
+texture = ExtResource( 59 )
+
+[node name="scale_dialog" type="Panel" parent="Controls"]
+visible = false
+margin_left = 510.0
+margin_top = 392.0
+margin_right = 879.0
+margin_bottom = 512.0
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/scale_dialog"]
+margin_left = 10.0
+margin_top = 8.0
+margin_right = 675.0
+margin_bottom = 55.0
+rect_scale = Vector2( 0.5, 0.8 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Scale current points by:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label2" type="Label" parent="Controls/scale_dialog"]
+margin_left = 150.0
+margin_top = 62.0
+margin_right = 337.0
+margin_bottom = 109.0
+rect_scale = Vector2( 0.5, 0.8 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "factor"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ok_button" type="TextureButton" parent="Controls/scale_dialog"]
+margin_left = 270.0
+margin_top = 65.0
+margin_right = 302.0
+margin_bottom = 97.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel_button" type="TextureButton" parent="Controls/scale_dialog"]
+margin_left = 314.0
+margin_top = 66.0
+margin_right = 346.0
+margin_bottom = 98.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox" type="SpinBox" parent="Controls/scale_dialog"]
+margin_left = 14.0
+margin_top = 59.0
+margin_right = 136.0
+margin_bottom = 97.0
+min_value = 0.1
+max_value = 50.0
+step = 0.1
+value = 1.0
+
+[node name="dialog_selector" type="Sprite" parent="Controls/scale_dialog"]
+position = Vector2( -7, 54 )
+rotation = -1.62991
+texture = ExtResource( 58 )
+
+[node name="shadow_for_dialogs" type="Sprite" parent="Controls/scale_dialog"]
+show_behind_parent = true
+position = Vector2( 219, 90 )
+scale = Vector2( 2.15, 1 )
+texture = ExtResource( 59 )
+
+[node name="rotate_dialog" type="Panel" parent="Controls"]
+visible = false
+margin_left = 682.0
+margin_top = 206.0
+margin_right = 1067.0
+margin_bottom = 326.0
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/rotate_dialog"]
+margin_left = 10.0
+margin_top = 8.0
+margin_right = 675.0
+margin_bottom = 55.0
+rect_scale = Vector2( 0.5, 0.8 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Rotate current points by:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label2" type="Label" parent="Controls/rotate_dialog"]
+margin_left = 150.0
+margin_top = 62.0
+margin_right = 337.0
+margin_bottom = 109.0
+rect_scale = Vector2( 0.5, 0.8 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "degrees"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ok_button" type="TextureButton" parent="Controls/rotate_dialog"]
+margin_left = 270.0
+margin_top = 65.0
+margin_right = 302.0
+margin_bottom = 97.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel_button" type="TextureButton" parent="Controls/rotate_dialog"]
+margin_left = 314.0
+margin_top = 66.0
+margin_right = 346.0
+margin_bottom = 98.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SpinBox" type="SpinBox" parent="Controls/rotate_dialog"]
+margin_left = 14.0
+margin_top = 59.0
+margin_right = 136.0
+margin_bottom = 97.0
+min_value = -360.0
+max_value = 360.0
+step = 0.1
+
+[node name="dialog_selector" type="Sprite" parent="Controls/rotate_dialog"]
+position = Vector2( 190, -6 )
+texture = ExtResource( 58 )
+
+[node name="shadow_for_dialogs" type="Sprite" parent="Controls/rotate_dialog"]
+show_behind_parent = true
+position = Vector2( 221, 86.75 )
+scale = Vector2( 2.34, 0.99 )
+texture = ExtResource( 59 )
+
+[node name="move_dialog" type="Panel" parent="Controls"]
+visible = false
+margin_left = 800.0
+margin_top = 551.0
+margin_right = 1224.0
+margin_bottom = 714.0
+custom_styles/panel = SubResource( 18 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/move_dialog"]
+margin_left = 10.0
+margin_top = 8.0
+margin_right = 675.0
+margin_bottom = 55.0
+rect_scale = Vector2( 0.5, 0.8 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "move current points by:"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label2" type="Label" parent="Controls/move_dialog"]
+margin_left = 150.0
+margin_top = 62.0
+margin_right = 337.0
+margin_bottom = 109.0
+rect_scale = Vector2( 0.5, 0.8 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Horizontally"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="x_SpinBox" type="SpinBox" parent="Controls/move_dialog"]
+margin_left = 14.0
+margin_top = 59.0
+margin_right = 136.0
+margin_bottom = 97.0
+min_value = -1e+06
+max_value = 1e+06
+value = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label3" type="Label" parent="Controls/move_dialog"]
+margin_left = 150.0
+margin_top = 110.0
+margin_right = 437.0
+margin_bottom = 157.0
+rect_scale = Vector2( 0.5, 0.8 )
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+text = "Vertically"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="y_SpinBox" type="SpinBox" parent="Controls/move_dialog"]
+margin_left = 14.0
+margin_top = 107.0
+margin_right = 136.0
+margin_bottom = 145.0
+min_value = -1e+06
+max_value = 1e+06
+value = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ok_button" type="TextureButton" parent="Controls/move_dialog"]
+margin_left = 341.0
+margin_top = 115.0
+margin_right = 373.0
+margin_bottom = 147.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 5 )
+texture_hover = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="cancel_button" type="TextureButton" parent="Controls/move_dialog"]
+margin_left = 382.0
+margin_top = 116.0
+margin_right = 414.0
+margin_bottom = 148.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 7 )
+texture_hover = ExtResource( 8 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialog_selector" type="Sprite" parent="Controls/move_dialog"]
+position = Vector2( 208, 170 )
+scale = Vector2( -1, -1 )
+texture = ExtResource( 58 )
+
+[node name="shadow_for_dialogs" type="Sprite" parent="Controls/move_dialog"]
+show_behind_parent = true
+position = Vector2( 247.5, 106 )
+scale = Vector2( 2.465, 1.37333 )
+texture = ExtResource( 59 )
+
+[node name="help_button" type="TextureButton" parent="Controls"]
+margin_left = 1223.0
+margin_top = 174.0
+margin_right = 1255.0
+margin_bottom = 206.0
+mouse_default_cursor_shape = 2
+texture_normal = ExtResource( 51 )
+texture_hover = ExtResource( 52 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="help_info" type="Panel" parent="Controls/help_button"]
+visible = false
+margin_left = -619.0
+margin_top = 13.0
+margin_right = 128.0
+margin_bottom = 585.0
+rect_scale = Vector2( 0.85, 0.85 )
+mouse_filter = 2
+custom_styles/panel = SubResource( 19 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="GridContainer" type="GridContainer" parent="Controls/help_button/help_info"]
+margin_left = 10.0
+margin_top = 10.0
+margin_right = 734.0
+margin_bottom = 561.0
+custom_constants/vseparation = 5
+custom_constants/hseparation = 14
+columns = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_right = 360.0
+margin_bottom = 57.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Left Click in
+  empty space:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label2" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_right = 734.0
+margin_bottom = 57.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "Create
+Point"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label3" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_top = 77.0
+margin_right = 360.0
+margin_bottom = 134.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Left Click
+  in Curve:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label4" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_top = 62.0
+margin_right = 734.0
+margin_bottom = 149.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "Create
+Intermediate
+Point"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label5" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_top = 154.0
+margin_right = 360.0
+margin_bottom = 211.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Right Click
+  in point:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label6" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_top = 169.0
+margin_right = 734.0
+margin_bottom = 196.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "Delete point"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label7" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_top = 216.0
+margin_right = 360.0
+margin_bottom = 273.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Left Click
+  in point:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label8" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_top = 216.0
+margin_right = 734.0
+margin_bottom = 273.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "Select or move
+the point"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label9" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_top = 278.0
+margin_right = 360.0
+margin_bottom = 335.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Shift + Left
+  Click in point:"
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label10" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_top = 278.0
+margin_right = 734.0
+margin_bottom = 335.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "Select or move
+control points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label11" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_top = 355.0
+margin_right = 360.0
+margin_bottom = 412.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Press control with
+  point selected:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label12" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_top = 340.0
+margin_right = 734.0
+margin_bottom = 427.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "enable or disable
+editing of individual
+control points"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label13" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_top = 447.0
+margin_right = 360.0
+margin_bottom = 474.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Control + Z:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label14" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_top = 432.0
+margin_right = 734.0
+margin_bottom = 489.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "Undo last
+action"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label15" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_top = 509.0
+margin_right = 360.0
+margin_bottom = 536.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 0.447059, 0.898039, 0.933333, 1 )
+text = "* Control + Alt + Z:"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label16" type="Label" parent="Controls/help_button/help_info/GridContainer"]
+margin_left = 374.0
+margin_top = 494.0
+margin_right = 734.0
+margin_bottom = 551.0
+custom_fonts/font = SubResource( 20 )
+custom_colors/font_color = Color( 1, 0, 0.305882, 1 )
+text = "Redo last
+action undone"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Line2D" type="Line2D" parent="Controls/help_button/help_info"]
+position = Vector2( -2, 0 )
+points = PoolVector2Array( 7, 73, 743, 73 )
+width = 3.0
+default_color = Color( 0.113725, 0.0823529, 0.501961, 1 )
+
+[node name="Line2D2" type="Line2D" parent="Controls/help_button/help_info"]
+position = Vector2( -2, 89 )
+points = PoolVector2Array( 7, 73, 743, 73 )
+width = 3.0
+default_color = Color( 0.113725, 0.0823529, 0.501961, 1 )
+
+[node name="Line2D3" type="Line2D" parent="Controls/help_button/help_info"]
+position = Vector2( -2, 148 )
+points = PoolVector2Array( 7, 73, 743, 73 )
+width = 3.0
+default_color = Color( 0.113725, 0.0823529, 0.501961, 1 )
+
+[node name="Line2D4" type="Line2D" parent="Controls/help_button/help_info"]
+position = Vector2( -2, 214 )
+points = PoolVector2Array( 7, 73, 743, 73 )
+width = 3.0
+default_color = Color( 0.113725, 0.0823529, 0.501961, 1 )
+
+[node name="Line2D5" type="Line2D" parent="Controls/help_button/help_info"]
+position = Vector2( -2, 276 )
+points = PoolVector2Array( 7, 73, 743, 73 )
+width = 3.0
+default_color = Color( 0.113725, 0.0823529, 0.501961, 1 )
+
+[node name="Line2D6" type="Line2D" parent="Controls/help_button/help_info"]
+position = Vector2( -2, 369 )
+points = PoolVector2Array( 7, 73, 743, 73 )
+width = 3.0
+default_color = Color( 0.113725, 0.0823529, 0.501961, 1 )
+
+[node name="Line2D7" type="Line2D" parent="Controls/help_button/help_info"]
+position = Vector2( -2, 429 )
+points = PoolVector2Array( 7, 73, 743, 73 )
+width = 3.0
+default_color = Color( 0.113725, 0.0823529, 0.501961, 1 )
+
+[node name="shadow_for_dialogs" type="Sprite" parent="Controls/help_button/help_info"]
+show_behind_parent = true
+position = Vector2( 422.941, 318.824 )
+scale = Vector2( 4.51176, 4.73726 )
+texture = ExtResource( 59 )
+
+[node name="CustomFileDialog" parent="Controls" instance=ExtResource( 40 )]
+visible = false
+margin_left = 454.0
+margin_top = 151.0
+margin_right = 1126.0
+margin_bottom = 743.0
+
+[node name="UndoRedo" parent="Controls" instance=ExtResource( 48 )]
+
+[node name="Tween_for_animation" type="Tween" parent="Controls"]
+repeat = true
+playback/repeat = true
+
+[node name="Tween_for_rotate_animation" type="Tween" parent="Controls"]
+[connection signal="tree_exiting" from="." to="Controls" method="_on_PathEdit_tree_exiting"]
+[connection signal="gui_input" from="Controls/Paths/path_list" to="Controls" method="_on_path_list_gui_input"]
+[connection signal="item_selected" from="Controls/Paths/path_list" to="Controls" method="_on_path_list_item_selected"]
+[connection signal="button_up" from="Controls/Paths/add_new_path_button" to="Controls" method="_on_add_new_path_button_button_up"]
+[connection signal="button_up" from="Controls/Paths/delete_selected_path_button" to="Controls" method="_on_delete_selected_path_button_button_up"]
+[connection signal="button_up" from="Controls/Paths/duplicate_path_button" to="Controls" method="_on_duplicate_path_button_button_up"]
+[connection signal="button_up" from="Controls/Paths/copy_path_button" to="Controls" method="_on_copy_path_button_button_up"]
+[connection signal="button_up" from="Controls/Paths/paste_path_button" to="Controls" method="_on_paste_path_button_button_up"]
+[connection signal="button_up" from="Controls/Paths/select_path_button" to="Controls" method="_on_select_path_button_button_up"]
+[connection signal="gui_input" from="Controls/Points/point_list" to="Controls" method="_on_point_list_gui_input"]
+[connection signal="item_selected" from="Controls/Points/point_list" to="Controls" method="_on_point_list_item_selected"]
+[connection signal="button_up" from="Controls/Points/delete_point_button" to="Controls" method="_on_delete_point_button_button_up"]
+[connection signal="button_up" from="Controls/Points/copy_point_button" to="Controls" method="_on_copy_point_button_button_up"]
+[connection signal="button_up" from="Controls/Points/paste_point_button" to="Controls" method="_on_paste_point_button_button_up"]
+[connection signal="value_changed" from="Controls/Points/x_SpinBox" to="Controls" method="_on_x_SpinBox_value_changed"]
+[connection signal="value_changed" from="Controls/Points/y_SpinBox" to="Controls" method="_on_y_SpinBox_value_changed"]
+[connection signal="value_changed" from="Controls/backed_SpinBox" to="Controls" method="_on_backed_SpinBox_value_changed"]
+[connection signal="value_changed" from="Controls/animation_time_SpinBox" to="Controls" method="_on_animation_time_SpinBox_value_changed"]
+[connection signal="button_up" from="Controls/play_forward_button" to="Controls" method="_on_play_forward_button_button_up"]
+[connection signal="button_up" from="Controls/play_backward_button" to="Controls" method="_on_play_backward_button_button_up"]
+[connection signal="button_up" from="Controls/stop_animation_button" to="Controls" method="_on_stop_animation_button_button_up"]
+[connection signal="gui_input" from="Controls/path_color_container/path_color" to="Controls" method="_on_path_color_gui_input"]
+[connection signal="button_up" from="Controls/canvas_clip_contents_button" to="Controls" method="_on_canvas_clip_contents_button_button_up"]
+[connection signal="button_up" from="Controls/ClosePath_button" to="Controls" method="_on_ClosePath_button_button_up"]
+[connection signal="button_up" from="Controls/MirrorPointsButtonsContainer/mirror_points_to_right" to="Controls" method="mirror_current_path_to" binds= [ "right" ]]
+[connection signal="button_up" from="Controls/MirrorPointsButtonsContainer/mirror_points_to_up" to="Controls" method="mirror_current_path_to" binds= [ "top" ]]
+[connection signal="button_up" from="Controls/load_background_button" to="Controls" method="_on_load_background_button_button_up"]
+[connection signal="gui_input" from="Controls/save_paths_LineEdit" to="Controls" method="_on_save_paths_LineEdit_gui_input"]
+[connection signal="button_up" from="Controls/select_paths_dialog_button" to="Controls" method="_on_select_paths_dialog_button_button_up"]
+[connection signal="button_up" from="Controls/save_paths_button" to="Controls" method="save_all_paths"]
+[connection signal="gui_input" from="Controls/Canvas" to="Controls" method="_on_Canvas_gui_input"]
+[connection signal="draw" from="Controls/Canvas/Layer0" to="Controls" method="_on_canvas_Layer0_draw"]
+[connection signal="draw" from="Controls/Canvas/Layer1" to="Controls" method="_on_Layer1_draw"]
+[connection signal="dblClick" from="Controls/rotate_points_Slider" to="Controls" method="_on_rotate_points_Slider_dblClick"]
+[connection signal="reset" from="Controls/rotate_points_Slider" to="Controls" method="_on_rotate_points_Slider_reset"]
+[connection signal="value_changed" from="Controls/rotate_points_Slider" to="Controls" method="_on_rotate_points_Slider_value_changed"]
+[connection signal="dblClick" from="Controls/scale_points_Slider" to="Controls" method="_on_scale_points_Slider_dblClick"]
+[connection signal="reset" from="Controls/scale_points_Slider" to="Controls" method="_on_scale_points_Slider_reset"]
+[connection signal="value_changed" from="Controls/scale_points_Slider" to="Controls" method="_on_scale_points_Slider_value_changed"]
+[connection signal="dblClick" from="Controls/move_horizontal_Slider" to="Controls" method="_on_move_horizontal_Slider_dblClick"]
+[connection signal="reset" from="Controls/move_horizontal_Slider" to="Controls" method="_on_move_horizontal_Slider_reset"]
+[connection signal="value_changed" from="Controls/move_horizontal_Slider" to="Controls" method="_on_move_horizontal_Slider_value_changed"]
+[connection signal="dblClick" from="Controls/move_vertical_Slider" to="Controls" method="_on_move_vertical_Slider_dblClick"]
+[connection signal="reset" from="Controls/move_vertical_Slider" to="Controls" method="_on_move_vertical_Slider_reset"]
+[connection signal="value_changed" from="Controls/move_vertical_Slider" to="Controls" method="_on_move_vertical_Slider_value_changed"]
+[connection signal="item_selected" from="Controls/center_points_option_button" to="Controls" method="_on_center_points_option_button_item_selected"]
+[connection signal="mouse_entered" from="Controls/center_points_option_button" to="Controls" method="_on_center_points_option_button_mouse_entered"]
+[connection signal="mouse_exited" from="Controls/center_points_option_button" to="Controls" method="_on_center_points_option_button_mouse_exited"]
+[connection signal="gui_input" from="Controls/hide_behind_controls" to="Controls" method="_on_hide_behind_controls_gui_input"]
+[connection signal="color_changed" from="Controls/ColorPicker/color" to="Controls" method="_on_color_color_changed"]
+[connection signal="button_up" from="Controls/replace_file_path_dialog/ok_button" to="Controls" method="_on_overwrite_paths_ok_button_button_up"]
+[connection signal="button_up" from="Controls/replace_file_path_dialog/cancel_button" to="Controls" method="_on_replace_dialog_cancel_button_button_up"]
+[connection signal="button_up" from="Controls/delete_path_dialog/ok_button" to="Controls" method="delete_path_selected"]
+[connection signal="button_up" from="Controls/delete_path_dialog/cancel_button" to="Controls" method="hide_all_dialogs"]
+[connection signal="text_entered" from="Controls/create_path_panel/LineEdit" to="Controls" method="create_path_by_enter_key"]
+[connection signal="button_up" from="Controls/create_path_panel/ok_button" to="Controls" method="create_path_by_ok_button"]
+[connection signal="button_up" from="Controls/create_path_panel/cancel_button" to="Controls" method="hide_all_dialogs"]
+[connection signal="button_up" from="Controls/scale_dialog/ok_button" to="Controls" method="scale_by_ok_button"]
+[connection signal="pressed" from="Controls/scale_dialog/cancel_button" to="Controls" method="hide_all_dialogs"]
+[connection signal="value_changed" from="Controls/scale_dialog/SpinBox" to="Controls" method="scale_by_input_value"]
+[connection signal="button_up" from="Controls/rotate_dialog/ok_button" to="Controls" method="rotate_by_ok_button"]
+[connection signal="pressed" from="Controls/rotate_dialog/cancel_button" to="Controls" method="hide_all_dialogs"]
+[connection signal="value_changed" from="Controls/rotate_dialog/SpinBox" to="Controls" method="rotate_by_input_value"]
+[connection signal="value_changed" from="Controls/move_dialog/x_SpinBox" to="Controls" method="move_by_input_value"]
+[connection signal="value_changed" from="Controls/move_dialog/y_SpinBox" to="Controls" method="move_by_input_value"]
+[connection signal="button_up" from="Controls/move_dialog/ok_button" to="Controls" method="move_by_ok_button"]
+[connection signal="pressed" from="Controls/move_dialog/cancel_button" to="Controls" method="hide_all_dialogs"]
+[connection signal="mouse_entered" from="Controls/help_button" to="Controls" method="_on_help_button_mouse_entered"]
+[connection signal="mouse_exited" from="Controls/help_button" to="Controls" method="_on_help_button_mouse_exited"]
+[connection signal="hide" from="Controls/CustomFileDialog" to="Controls" method="_on_CustomFileDialog_hide"]
+[connection signal="select_files" from="Controls/CustomFileDialog" to="Controls" method="_on_CustomFileDialog_select_files"]
+[connection signal="redoHappened" from="Controls/UndoRedo" to="Controls" method="perform_redo"]
+[connection signal="undoHappened" from="Controls/UndoRedo" to="Controls" method="perform_undo"]
